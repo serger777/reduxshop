@@ -1,0 +1,11 @@
+.item {
+    padding: 10px;
+}
+.wrap {
+    padding: 5px;
+    flex-direction: column;
+    display: flex;
+}
+.image{
+    width: 150px;
+}
