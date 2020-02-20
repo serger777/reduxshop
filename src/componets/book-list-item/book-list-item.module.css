@@ -1,11 +1,13 @@
 .item {
-    padding: 10px;
+  padding: 10px;
 }
+
 .wrap {
-    padding: 5px;
-    flex-direction: column;
-    display: flex;
+  padding: 5px;
+  flex-direction: column;
+  display: flex;
 }
-.image{
-    width: 150px;
+
+.image {
+  width: 150px;
 }

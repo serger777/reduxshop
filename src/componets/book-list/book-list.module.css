@@ -1,9 +1,10 @@
 .wrap {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
+
 .item {
-    border: 1px dashed #c2bebf;
-    margin: 10px;
-    width: 300px;
+  border: 1px dashed #c2bebf;
+  margin: 10px;
+  width: 300px;
 }

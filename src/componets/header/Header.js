@@ -1,12 +1,23 @@
 import React from 'react';
-import style from './Header.module.css'
+import { Link } from 'react-router-dom';
+import style from './Header.module.css';
+import { connect } from "react-redux";
 
-const Header =({numItems, total})=>{
-    return(
-        <header className={style.header}>
-            <a href="/">SHOP</a>
-            <p>{numItems} items {total}</p>
-        </header>
-    )
-}
-export default Header;
+const Header = ({ numItems, countTotal }) => (
+	<header className={style.header}>
+		<Link className={style.link} to="/">
+			<h3>SHOP</h3>
+		</Link>
+		<Link className={style.link} to="cart">
+			{numItems>0 && <p >{numItems} items {countTotal}</p> }
+		</Link>
+
+	</header>
+);
+
+const mapStateToProps = ({ shoppingCart: { cartItems, countTotal } }) => ({
+	numItems: cartItems.length,
+	countTotal,
+});
+
+export default connect(mapStateToProps)(Header);

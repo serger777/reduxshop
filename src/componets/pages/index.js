@@ -1,4 +1,4 @@
-import {HomePage} from './home-page';
-import {CartPge} from './cart-page';
+import HomePage from './CartPage';
+import CartPge from './HomePage';
 
-export  {HomePage,CartPge };
+export default { HomePage, CartPge };
